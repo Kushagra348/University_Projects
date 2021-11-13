@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/countrylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Choose the country from the given list to see its capital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/countrylist"
+        tools:layout_editor_absoluteX="149dp">
+
+        <RadioButton
+            android:id="@+id/con1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <RadioButton
+            android:id="@+id/con2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Australia"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="360dp" />
+
+        <RadioButton
+            android:id="@+id/con3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South Africa"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="453dp" />
+
+        <RadioButton
+            android:id="@+id/con4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Zealand"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="453dp" />
+
+        <RadioButton
+            android:id="@+id/con5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="England"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="453dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        android:text="Capital:-"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displaycapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="428dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countrylist"
+        android:textSize="15dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
